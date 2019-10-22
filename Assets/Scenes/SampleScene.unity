@@ -5148,7 +5148,7 @@ GameObject:
   - component: {fileID: 615616202}
   m_Layer: 0
   m_Name: Paddle
-  m_TagString: Untagged
+  m_TagString: paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5277,6 +5277,8 @@ MonoBehaviour:
   moveLeft: 97
   moveRight: 100
   speed: 25
+  boost: 10
+  picked: 0
   boundX: 11.4
 --- !u!255 &615616202
 FixedJoint2D:
@@ -8613,7 +8615,7 @@ MonoBehaviour:
   launched: 0
   powerupPaddle: {fileID: 2567510280398600054, guid: ceba8cfd176505d47b1d59c911d6ae1b,
     type: 3}
-  powerupBall: {fileID: 2751725569875501513, guid: 859ad95855a06784d9e59aede2981637,
+  powerupSpeed: {fileID: 2751725569875501513, guid: 859ad95855a06784d9e59aede2981637,
     type: 3}
   end: 0
 --- !u!1 &1110040791

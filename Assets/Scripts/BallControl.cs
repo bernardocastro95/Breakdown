@@ -11,7 +11,7 @@ public class BallControl : MonoBehaviour
     public KeyCode restart = KeyCode.Return;    
     public FixedJoint2D fj2d;
     public bool launched = false;
-    public GameObject powerupPaddle, powerupBall;
+    public GameObject powerupPaddle, powerupSpeed;
     public bool end = false;
     // Start is called before the first frame update
     void Start()
@@ -54,7 +54,7 @@ public class BallControl : MonoBehaviour
             float position = Random.Range(0, 10);
             if(position > 5)
             {
-                Instantiate(powerupBall, collision2D.transform.position, Quaternion.identity);
+                Instantiate(powerupSpeed, collision2D.transform.position, Quaternion.identity);
             }
             else 
             {
